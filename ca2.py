@@ -1,31 +1,3 @@
-# --- Wrong Syntax Code ---
-# def find_cube_pairs(target)         -- Missing colon at end of function definition
-#     # solutions = [];
-#     solutions = []                 -- Extraneous semicolon was used here
-#     # max_num = round(targ *** (1/3))  -- Incorrect variable name 'targ' and wrong operator '***'
-#     max_num = round(target ** (1/3)) -- Fixed variable name and operator
-#
-#     # for a in ranges(1, max_num + 1) -- Incorrect function name 'ranges' instead of 'range', missing colon
-#     for a in range(1, max_num + 1):
-#         # for b in ranges(a, max_num + 1) -- Same error as above
-#         for b in range(a, max_num + 1):
-#             # if a***3 + b***3 == targ -- Wrong operator and variable names
-#             if a**3 + b**3 == target:
-#                 # sol.append((a, b));     -- Incorrect variable name 'sol' and extraneous semicolon
-#                 solutions.append((a, b))
-#     # return sol                      -- Return the wrong variable name
-#     return solutions
-#
-# # pairs = find_cube_pairs(1729),         -- Extraneous comma included
-# pairs = find_cube_pairs(1729)
-# # printf("Valid cube pairs for 1728:"),   -- Wrong function 'printf' and wrong target value '1728'
-# print("Valid cube pairs for 1729:")
-# # for a, b in pair                     -- Incorrect variable name 'pair' instead of 'pairs'
-# for a, b in pairs:
-#     # printf(f" → {a}³ + {b}³ = {a**2} + {b**2} = 1728") -- Wrong exponent (2 instead of 3) and wrong target value
-#     print(f" → {a}³ + {b}³ = {a**3} + {b**3} = 1729")
-
-
 # --- Corrected Code ---
 def find_cube_pairs(target):  # Added missing colon in function definition
     solutions = []  # Removed unnecessary semicolon
